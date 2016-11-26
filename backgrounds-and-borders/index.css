@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    font-size: 20px;
+    background: url("../img/jiguang.jpg") no-repeat;
+    background-size: contain;
+}
+
+.parent p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.transparent-borders {
+    border: 5px solid hsla(0,0%,100%,.5);
+    background-clip: padding-box;
+}
+
+.multiple-borders {
+    height: 100px;
+    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink, 0 2px 5px 15px rgba(0,0,0,.6);
+}
+
+.outline {
+    box-shadow: none;
+    border: 10px solid #655;
+    outline: 5px dashed deeppink;
+    outline-offset: -5px;
+}
+
+.parent .flexible-bg-positioning {
+    height: 100px;
+    color: #fff;
+    background: url("../img/code-pirate.svg") no-repeat bottom right #58a;
+    background-position: right 20px bottom 10px;
+}

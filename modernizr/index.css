@@ -1,0 +1,13 @@
+div {
+    margin: 50px auto;
+    width: 200px;
+    height: 200px;
+}
+
+.no-cssgradients div {
+    background: red;
+}
+
+.cssgradients div {
+    background-image: linear-gradient(cornflowerblue, rebeccapurple);
+}

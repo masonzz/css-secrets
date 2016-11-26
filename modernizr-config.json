@@ -1,0 +1,13 @@
+{
+  "minify": false,
+  "options": [
+    "domPrefixes",
+    "prefixes",
+    "prefixed",
+    "setClasses",
+    "atRule"
+  ],
+  "feature-detects": [
+    "test/css/gradients"
+  ]
+}
