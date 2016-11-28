@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    background-size: contain;
+}
+
+.parent p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    padding: .8em;
+    background-color: #655;
+}
+
+.parent p span {
+    display: inline-block;
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+}
+
+.parent .inner-rounding {
+    background: tan;
+    border-radius: .8em;
+    padding: 1em;
+    box-shadow: 0 0 0 .6em #655;
+    outline: .6em solid #655;
+}
+

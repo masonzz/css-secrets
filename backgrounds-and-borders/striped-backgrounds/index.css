@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+    font-size: 20px;
+    background-size: contain;
+}
+
+.parent p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    height: 100px;
+    padding: .8em;
+    border: 1px dashed darkgrey;
+}
+
+.parent .striped-backgrounds.horizontal-stripes {
+    /*background: linear-gradient(#fb3 50%, #59c 50%) no-repeat;*/
+    background: linear-gradient(#fb3 33.3%, #c0f 0, #c0f 66.6%, #59c 0) no-repeat;
+    background-size: 100% 30px;
+}
+
+.parent .striped-backgrounds.vertical-stripes {
+    background: linear-gradient(to right, #fb3 50%, #c0f 0) no-repeat;
+    background-size: 30px 100%;
+}
+
+.parent .striped-backgrounds.diagonal-stripes {
+    /*background: linear-gradient(45deg, #fb3 25%, #c0f 0, #c0f 50%, #fb3 0, #fb3 75%, #c0f 0);*/
+    background: repeating-linear-gradient(45deg, #fb3, #fb3 15px,#c0f 0, #c0f 30px);
+    /*background: repeating-linear-gradient(45deg, #fb3 0, #fb3 25%,#c0f 0, #c0f 50%);*/
+    /*background-size: 42.426406871px 42.426406871px;*/
+}
+
+.parent .striped-backgrounds.subtle-stripes {
+    background: #fb3;
+    background-image: repeating-linear-gradient(30deg, hsla(0,0%,100%,.1), hsla(0,0%,100%,.1) 15px, transparent 0, transparent 30px);
+}
