@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    position: relative;
+    margin: 20px auto;
+    width: 400px;
+    height: 180px;
+    text-align: center;
+    font-size: 20px;
+    background-size: contain;
+}
+
+.parent .child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    background-color: #fb3;
+}
+
+.ellipse {
+    height: 100px;
+    border-radius: 50%;
+}
+
+.half-ellipse {
+    height: 100px;
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+.half-ellipse2 {
+    height: 100px;
+    border-radius: 100% 0 0 100% / 50%;
+}
+
+.flex-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.flex-box p {
+    font-size: 30px;
+    line-height: 100px;
+    flex: 0 0 320px;
+}
+
+.container {
+    position: relative;
+    margin: 0 20px;
+    background: tan;
+    width: 150px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.container .corner {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+
+.container .top-left {
+    background: #fb3;
+    top: 0;
+    left: 0;
+    border-radius: 25px 0 0 0;
+}
+
+.container .top-right {
+    background-color: mediumspringgreen;
+    top: 0;
+    right: 0;
+    border-radius: 0 25px 0 0;
+}
+
+.container .bottom-right {
+    background-color: deeppink;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 25px 0;
+}
+
+.container .bottom-left {
+    background-color: #468;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 0 25px;
+}
+

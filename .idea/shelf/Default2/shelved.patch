@@ -1,0 +1,94 @@
+Index: shape/diamond-images/index.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- shape/diamond-images/index.css	(revision )
++++ shape/diamond-images/index.css	(revision )
+@@ -0,0 +1,54 @@
++* {
++    margin: 0;
++    padding: 0;
++}
++
++.parent {
++    margin: 20px auto;
++    width: 400px;
++    text-align: center;
++    font-size: 20px;
++    background-size: contain;
++}
++
++.parallelogram {
++    padding: .5em 1em;
++    border: 0;
++    margin: .5em;
++    background: #58a;
++    color: white;
++    text-transform: uppercase;
++    text-decoration: none;
++    font: bold 200%/1 sans-serif;
++}
++
++.parallelogram {
++    transform: skewX(45deg);
++}
++
++.parallelogram > div {
++    transform: skewX(-45deg);
++}
++
++.parallelogram-pseudo {
++    position: relative;
++    padding: .5em 1em;
++    border: 0;
++    margin: .5em;
++    color: white;
++    text-transform: uppercase;
++    text-decoration: none;
++    font: bold 200%/1 sans-serif;
++}
++
++.parallelogram-pseudo:before {
++    content: '';
++    position: absolute;
++    top: 0;
++    right: 0;
++    bottom: 0;
++    left: 0;
++    background-color: #58f;
++    z-index: -1;
++    transform: skewX(45deg);
++}
+\ No newline at end of file
+Index: shape/diamond-images/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- shape/diamond-images/index.html	(revision )
++++ shape/diamond-images/index.html	(revision )
+@@ -0,0 +1,22 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>平行四边形</title>
++    <link rel="stylesheet" href="index.css">
++</head>
++<body>
++
++<!-- 平行四边形 -->
++<div class="parent">
++    <div class="parallelogram">
++        <div>Click me</div>
++    </div>
++</div>
++<div class="parent">
++    <div class="parallelogram-pseudo">Click me</div>
++</div>
++
++
++</body>
++</html>
+\ No newline at end of file
